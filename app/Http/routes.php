@@ -16,7 +16,7 @@ use League\Csv\Reader;
 */
 
 $app->get('/', function () use ($app) {
-    return $app->welcome();
+    return view('home');
 });
 
 $app->get('coupons/generate', function () use ($app) {
@@ -50,4 +50,6 @@ $app->post('coupons/generate', function (Request $request) use ($app) {
         });
         $template->save(storage_path('app/coupons/'. $title.'/'.$code.'.'.$templateFile->getClientOriginalExtension()));
     }
+
+    echo 'Done';
 });
