@@ -16,6 +16,22 @@
                             <input type="file" name="coupon_template" id="coupon_template">
                         </div>
                         <div class="form-group">
+                            <label for="text_coord_x">Text Coord X (in pixel)</label>
+                            <input type="text" name="text_coord_x" id="text_coord_x">
+                        </div>
+                        <div class="form-group">
+                            <label for="text_coord_y">Text Coord Y (in pixel)</label>
+                            <input type="text" name="text_coord_y" id="text_coord_y">
+                        </div>
+                        <div class="form-group">
+                            <label for="font_size">Font Size (in pixel)</label>
+                            <input type="text" name="font_size" id="font_size">
+                        </div>
+                        <div class="form-group">
+                            <label for="font_color">Font Color (in HEX)</label>
+                            <input type="text" name="font_color" id="font_color">
+                        </div>
+                        <div class="form-group">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
